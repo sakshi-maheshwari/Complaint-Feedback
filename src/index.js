@@ -1,4 +1,4 @@
-import React from "react";
+ import React from "react";
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { render } from "react-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -18,13 +18,13 @@ class App extends React.Component{
                     <BrowserRouter>
                         <Route />
                             <Switch>
-                                <Route exact path="/" component={Header,ActiveComplaints}/>
-                                <Route path="/academics" component={AcademicsForm} />
-                                <Route path="/infrastructure" component={InfrastructureForm} />
-                                <Route path="/miscellenous" component={MiscellenousForm} />
-                                <Route path="/sanitation" component={SanitationForm} />
-                                <Route path="/mycomplaints" component={MyComplaints}/>
-                                <Route path="/feedback" component={Feedback} />
+                                <Route exact path="/Complaint-Feedback/" component={Header,ActiveComplaints}/>
+                                <Route path="/Complaint-Feedback/academics" component={AcademicsForm} />
+                                <Route path="/Complaint-Feedback/infrastructure" component={InfrastructureForm} />
+                                <Route path="/Complaint-Feedback/miscellenous" component={MiscellenousForm} />
+                                <Route path="/Complaint-Feedback/sanitation" component={SanitationForm} />
+                                <Route path="/Complaint-Feedback/mycomplaints" component={MyComplaints}/>
+                                <Route path="/Complaint-Feedback/feedback" component={Feedback} />
                             </Switch>
                      </BrowserRouter>
                     <Header />
